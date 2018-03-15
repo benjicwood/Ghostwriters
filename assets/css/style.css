@@ -669,6 +669,92 @@ textarea {
     margin: 0 auto 50px;
 }
 
+/*--------------------------------------------------------
+    CONTACT
+--------------------------------------------------------*/
+
+label span {
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+.contact-section {
+    background-color: #222;
+    background-image: url(../images/htglogo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-section hr {
+    margin-bottom: 80px;
+    border: 2px solid #944fa0;
+}
+
+.contact-section form {
+    max-width: 450px;
+    margin: 0 auto 50px;
+}
+
+.contact-section form input,
+textarea {
+    background-color: transparent;
+    border: 3px solid #944fa0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.contact-section form input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #944fa0;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-section form label span {
+    display: block;
+}
+
+.details label {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.details label:nth-child(1) {
+    padding-right: 5px;
+}
+
+.details label:nth-child(2) {
+    padding-left: 5px;
+}
+
+.contact-section form textarea {
+    height: 10em;
+}
+
+.contact-section form input[type="submit"] {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-color: #944fa0;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 33%;
+}
+
+.contact-section form input[type="submit"]:hover {
+    background: #944fa0;
+}
+
+.submit-wrap {
+    text-align: right;
+}
+
 
 /*--------------------------------------------------------
     FOOTER
