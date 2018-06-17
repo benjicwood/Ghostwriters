@@ -827,8 +827,6 @@ footer .row {
     transition: color 0.8s;
 }
 
-.fa-medium {}
-
 .fa-github:hover {
     color: #000;
 }
