@@ -115,7 +115,7 @@ input[type=submit]:active {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #592d60;
+    border-bottom: 2px solid #4F999D;
     cursor: pointer;
 }
 
