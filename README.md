@@ -1,5 +1,5 @@
 # GHOSTWRITERS
 
-A website for the rock band Ghostwriters from Bingley, West Yorkshire
+A website for the rap rock band Ghostwriters from Bingley, West Yorkshire
 
 www.ghostwriterstheband.co.uk
