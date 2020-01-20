@@ -184,9 +184,9 @@ input[type=submit]:active {
 
 .header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/contactbg.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/backgroundg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-color: #222125;
-    height: 100vh;
+    /* height: 100vh; */
     width: auto;
     background-size: cover;
     background-position: center;
@@ -393,12 +393,7 @@ span {
 --------------------------------------------------------*/
 
 .section-about {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-color: #222125;
-    height: 100vh;
-    height: auto;
-    width: auto;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -436,6 +431,7 @@ h2 {
 }
 
 .about-row {
+    text-align: center;
     padding: 0px 50px;
 }
 
