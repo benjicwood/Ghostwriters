@@ -3,7 +3,7 @@ body {
     background: #fff;
     color: #999;
     text-align: justify;
-    font-family: "Lato", "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -18,7 +18,7 @@ body {
 
 section {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -206,7 +206,7 @@ input[type=submit]:active {
     width: 20%;
     margin: 0 auto 20px auto;
     display: block;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .job-div {
@@ -304,7 +304,7 @@ span {
 .location {
     font-size: 20px;
     margin-left: 10px;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
 }
@@ -591,11 +591,11 @@ textarea {
 }
 
 .live-table {
-    width: 85%;
+    width: 100%;
 }
 
 .table-position {
-    padding-left: 15%;
+    /* padding-left: 15%; */
 }
 
 /*--------------------------------------------------------
