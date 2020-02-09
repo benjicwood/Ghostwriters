@@ -26,13 +26,13 @@ h1 {
     margin: 0.3em 0!important;
     font-weight: 300;
     color: #fff;
+    text-align: center;
 }
 
-hr {
-    width: 30%;
-    float: left;
-    margin-top: 0px;
+.underline {
+    width: 25%;
     border: 2px solid #4F999D;
+    margin: auto auto 20px;
 }
 
 
@@ -657,8 +657,9 @@ textarea {
 
 
 .merch-section {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
+
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -769,8 +770,8 @@ textarea:focus {
 }
 
 footer {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     text-align: center;
     padding-top: 10px;
 }
@@ -881,55 +882,61 @@ footer .row {
     opacity: 1;
 }
 
-/* Variables
-================================== */
+/* Gig List Table */
 
-
-/* Tables
-================================== */
-.Rtable {
+.gig-table {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   padding: 0;
   width: 95%;
+  color: white;
 }
-.Rtable-cell {
+
+.gig-table-event {
   box-sizing: border-box;
   flex-grow: 1;
   width: 100%;
-  padding: 0.8em 1.2em;
+  padding: 0.6em;
   overflow: hidden;
   list-style: none;
-  border: solid 3px white;
-  background: fade(slategrey,20%);
+  border: solid 1px white;
   > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
 }
 
-/* Table column sizing
-================================== */
-.Rtable--2cols > .Rtable-cell  { width: 50%; }
-.Rtable--3cols > .Rtable-cell  { width: 33.33%; }
-.Rtable--4cols > .Rtable-cell  { width: 25%; }
-.Rtable--5cols > .Rtable-cell  { width: 20%; }
-.Rtable--6cols > .Rtable-cell  { width: 16.6%; }
+.gig-table-event > h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.gig-table-date {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+
+}
+
+.gig-venue {}
+
+.gig-location {}
+
+/* Table column sizing */
+.gig-table--3cols > .gig-table-event  { width: 33.33%; }
+/* .Rtable--4cols > .gig-table-event  { width: 25%; } */
 
 
-/* Responsive
-==================================== */
+
+/* Responsive */
 @media all and (max-width: 500px) {
-    .Rtable--3cols > .Rtable-cell  { width: 95%; }
+    .gig-table--3cols > .gig-table-event  { margin: auto; width: 95%; }
 
   .Rtable--collapse  {
     display: block;
-    > .Rtable-cell { width: 100% !important; }
-    > .Rtable-cell--foot { margin-bottom: 1em; }
+    > .gig-table-event { width: 100% !important; }
+    > .gig-location { margin-bottom: 1em; }
   }
 }
 
-// Non-Flex modernizer fallback
-.no-flexbox .Rtable {
+.no-flexbox .gig-table {
   display: block;
-  > .Rtable-cell { width: 100%; }
-  > .Rtable-cell--foot { margin-bottom: 1em; }
+  > .gig-table-event { width: 100%; }
+  > .gig-location { margin-bottom: 1em; }
 }
