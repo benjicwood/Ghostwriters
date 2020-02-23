@@ -29,10 +29,14 @@ h1 {
     text-align: center;
 }
 
+a {
+    color: #4F999D;
+}
+
 .underline {
     width: 25%;
     border: 2px solid #4F999D;
-    margin: auto auto 20px;
+    margin: auto auto 60px;
 }
 
 
@@ -493,8 +497,8 @@ h2 {
 --------------------------------------------------------*/
 
 .section-music {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-color: #222125;
     height: 100vh;
     height: auto;
@@ -900,7 +904,7 @@ footer .row {
   padding: 0.6em;
   overflow: hidden;
   list-style: none;
-  border: solid 1px white;
+  border: solid 1px #2b2b2b;
   > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
 }
 
@@ -919,6 +923,7 @@ footer .row {
 .gig-location {}
 
 /* Table column sizing */
+
 .gig-table--3cols > .gig-table-event  { width: 33.33%; }
 /* .Rtable--4cols > .gig-table-event  { width: 25%; } */
 
