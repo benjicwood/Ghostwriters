@@ -440,6 +440,15 @@ h2 {
     padding: 0px 50px;
 }
 
+.bio {
+    padding: 40px 10px;
+}
+
+.bio p {
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+
 /*--------------------------------------------------------
     PICTURES
 --------------------------------------------------------*/
@@ -541,6 +550,36 @@ h2 {
     padding: 0px 50px;
 }
 
+.high-life-info-left {
+    display: flex;
+    width: 100%;
+}
+
+.high-life-info-right {
+    width: 60%;
+    height: auto;
+}
+
+.high-life-cover {
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+.high-life-img {
+    width: 90%;
+    height: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .high-life-info-left { display: block; }
+    .high-life-info-right { width: 90%; margin: auto; }
+    .high-life-cover { width: 60%; padding-bottom: 15px; }
+    .high-life-img { width: 100%; height: 100%; }
+
+    .underline { margin: auto auto 20px; }
+    .pro-row { margin-left: 0; }
+}
 
 /*--------------------------------------------------------
     LIVE
@@ -553,13 +592,15 @@ label span {
 
 .live-section {
     background-color: #000;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/map-image.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/map-image.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .live-section hr {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     border: 2px solid #4F999D;
 }
 
