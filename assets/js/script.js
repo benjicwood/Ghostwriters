@@ -35,7 +35,7 @@ $(document).ready(function () {
     /*--------------------------------------------------------
         STICKY NAV
     --------------------------------------------------------*/
-    $(".js--section-projects").waypoint(function (direction) {
+    $(".live-section").waypoint(function (direction) {
         if (direction == "down") {
             $("nav").addClass("sticky");
         }
@@ -43,7 +43,7 @@ $(document).ready(function () {
             $("nav").removeClass("sticky");
         }
     }, {
-        offset: "60px;"
+        offset: "120px;"
     });
     /*--------------------------------------------------------
         TYPE ANIMATION

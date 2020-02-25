@@ -83,7 +83,7 @@
     .main-nav {
         float: left;
         margin-top: 35px;
-        margin-left: 45px;
+        margin-left: 20%;
     }
     .main-nav li {
         display: block;
@@ -93,7 +93,6 @@
         display: block;
         border: 0;
         padding: 10px 0;
-        font-size: 100%;
     }
     .sticky {
         padding-bottom: 5px;

@@ -3,7 +3,7 @@ body {
     background: #fff;
     color: #999;
     text-align: justify;
-    font-family: "Lato", "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px;
     width: 100%;
@@ -18,7 +18,7 @@ body {
 
 section {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -26,13 +26,24 @@ h1 {
     margin: 0.3em 0!important;
     font-weight: 300;
     color: #fff;
+    text-align: center;
 }
 
-hr {
-    width: 30%;
-    float: left;
-    margin-top: 0px;
+a {
+    color: #4F999D;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: rgb(122, 240, 247);
+    text-decoration: none;
+}
+
+.underline {
+    width: 25%;
     border: 2px solid #4F999D;
+    margin: auto auto 60px;
 }
 
 
@@ -184,9 +195,9 @@ input[type=submit]:active {
 
 .header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/contactbg.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/backgroundg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-color: #222125;
-    height: 100vh;
+    /* height: 100vh; */
     width: auto;
     background-size: cover;
     background-position: center;
@@ -206,7 +217,7 @@ input[type=submit]:active {
     width: 20%;
     margin: 0 auto 20px auto;
     display: block;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .job-div {
@@ -276,6 +287,7 @@ span {
     font-size: 60px;
     font-weight: 300;
     width: 100%;
+    letter-spacing:
 }
 
 .hero-container {
@@ -304,7 +316,7 @@ span {
 .location {
     font-size: 20px;
     margin-left: 10px;
-    font-family: Lato;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
 }
@@ -393,12 +405,7 @@ span {
 --------------------------------------------------------*/
 
 .section-about {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-color: #222125;
-    height: 100vh;
-    height: auto;
-    width: auto;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -436,7 +443,24 @@ h2 {
 }
 
 .about-row {
+    text-align: center;
     padding: 0px 50px;
+}
+
+.bio {
+    padding: 40px 10px;
+}
+
+.bio p {
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+.ghostie {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
 }
 
 /*--------------------------------------------------------
@@ -496,8 +520,8 @@ h2 {
 --------------------------------------------------------*/
 
 .section-music {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-color: #222125;
     height: 100vh;
     height: auto;
@@ -540,6 +564,55 @@ h2 {
     padding: 0px 50px;
 }
 
+.high-life-info-left {
+    display: flex;
+    width: 100%;
+}
+
+.high-life-info-right {
+    width: 60%;
+    height: auto;
+}
+
+.high-life-cover {
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+.high-life-img {
+    width: 90%;
+    height: 90%;
+}
+
+.high-life-line-one {
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+.high-life-line-two {
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 768px) {
+    a { text-align: center; }
+    h2 { text-align: center; }
+    .high-life-info-left { display: block; }
+    .high-life-info-right { width: 90%; margin: auto; }
+    .high-life-cover { width: 60%; padding-bottom: 15px; }
+    .high-life-img { width: 100%; height: 100%; }
+    .high-life-line-one { line-height: 1.2em; letter-spacing: 1px; }
+    .high-life-line-two { line-height: 1.2em; letter-spacing: 1px; }
+
+    .bandcamp-link { font-size: 12px; text-align: center; }
+
+    .underline { margin: auto auto 20px; }
+    .pro-row { margin-left: 0; }
+
+    .gig-table { text-align: center; width: 100%; }
+
+}
 
 /*--------------------------------------------------------
     LIVE
@@ -552,13 +625,15 @@ label span {
 
 .live-section {
     background-color: #000;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/map-image.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/map-image.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .live-section hr {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     border: 2px solid #4F999D;
 }
 
@@ -595,11 +670,11 @@ textarea {
 }
 
 .live-table {
-    width: 85%;
+    width: 100%;
 }
 
 .table-position {
-    padding-left: 15%;
+    /* padding-left: 15%; */
 }
 
 /*--------------------------------------------------------
@@ -660,8 +735,9 @@ textarea {
 
 
 .merch-section {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
+
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -772,8 +848,8 @@ textarea:focus {
 }
 
 footer {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/greenstrip.png);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
     text-align: center;
     padding-top: 10px;
 }
@@ -882,4 +958,64 @@ footer .row {
 .js--wp-2.animated,
 .js--wp-3.animated {
     opacity: 1;
+}
+
+/* Gig List Table */
+
+.gig-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  color: white;
+}
+
+.gig-table-event {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.6em;
+  overflow: hidden;
+  list-style: none;
+  border: solid 1px #2b2b2b;
+  > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
+}
+
+.gig-table-event > h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.gig-table-date {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/highlife/background-noisy-smaller.jpg);
+
+}
+
+.gig-venue {}
+
+.gig-location {}
+
+/* Table column sizing */
+
+.gig-table--3cols > .gig-table-event  { width: 33.33%; }
+/* .Rtable--4cols > .gig-table-event  { width: 25%; } */
+
+
+
+/* Responsive */
+@media all and (max-width: 500px) {
+    .gig-table--3cols > .gig-table-event  { margin: auto; width: 95%; }
+
+  .Rtable--collapse  {
+    display: block;
+    > .gig-table-event { width: 100% !important; }
+    > .gig-location { margin-bottom: 1em; }
+  }
+}
+
+.no-flexbox .gig-table {
+  display: block;
+  > .gig-table-event { width: 100%; }
+  > .gig-location { margin-bottom: 1em; }
 }
