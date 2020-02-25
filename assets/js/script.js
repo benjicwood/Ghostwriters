@@ -43,7 +43,7 @@ $(document).ready(function () {
             $("nav").removeClass("sticky");
         }
     }, {
-        offset: "130px;"
+        offset: "120px;"
     });
     /*--------------------------------------------------------
         TYPE ANIMATION

@@ -31,6 +31,13 @@ h1 {
 
 a {
     color: #4F999D;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: rgb(122, 240, 247);
+    text-decoration: none;
 }
 
 .underline {
@@ -449,6 +456,13 @@ h2 {
     letter-spacing: 1.5px;
 }
 
+.ghostie {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
 /*--------------------------------------------------------
     PICTURES
 --------------------------------------------------------*/
@@ -571,14 +585,33 @@ h2 {
     height: 90%;
 }
 
+.high-life-line-one {
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+.high-life-line-two {
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+}
+
 @media only screen and (max-width: 768px) {
+    a { text-align: center; }
+    h2 { text-align: center; }
     .high-life-info-left { display: block; }
     .high-life-info-right { width: 90%; margin: auto; }
     .high-life-cover { width: 60%; padding-bottom: 15px; }
     .high-life-img { width: 100%; height: 100%; }
+    .high-life-line-one { line-height: 1.2em; letter-spacing: 1px; }
+    .high-life-line-two { line-height: 1.2em; letter-spacing: 1px; }
+
+    .bandcamp-link { font-size: 12px; text-align: center; }
 
     .underline { margin: auto auto 20px; }
     .pro-row { margin-left: 0; }
+
+    .gig-table { text-align: center; width: 100%; }
+
 }
 
 /*--------------------------------------------------------
