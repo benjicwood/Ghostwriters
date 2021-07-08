@@ -483,9 +483,9 @@ h2 {
     background-color: #000;
 }
 
-.pro-row {
+/* .pro-row {
     margin-left: 50px;
-}
+} */
 
 .col-md-4 {
     padding: 5px;
@@ -697,9 +697,9 @@ textarea {
     background-color: #000;
 }
 
-.pro-row {
+/* .pro-row {
     margin-left: 50px;
-}
+} */
 
 .col-md-4 {
     padding: 5px;
@@ -771,7 +771,7 @@ label span {
 
 .contact-section hr {
     margin-bottom: 80px;
-    border: 2px solid #4F999D;
+    border: 2px solid white;
 }
 
 .contact-section form {
@@ -782,7 +782,7 @@ label span {
 .contact-section form input,
 textarea {
     background-color: transparent;
-    border: 3px solid #4F999D;
+    border: 1px solid whitesmoke;
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -791,7 +791,7 @@ textarea {
 .contact-section form input:focus,
 textarea:focus {
     outline: none;
-    border-color: #4F999D;
+    border-color: whitesmoke;
 }
 
 .contact-section form label {
@@ -818,20 +818,20 @@ textarea:focus {
 }
 
 .contact-section form textarea {
-    height: 10em;
+    height: 8em;
 }
 
 .contact-section form input[type="submit"] {
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    border-color: #4F999D;
+    border-color: whitesmoke;
     font-size: 18px;
     text-transform: uppercase;
     width: 33%;
 }
 
 .contact-section form input[type="submit"]:hover {
-    background: #4F999D;
+    background: whitesmoke;
 }
 
 .submit-wrap {
